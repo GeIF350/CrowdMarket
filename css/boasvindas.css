@@ -1,3 +1,9 @@
 #logo{
     margin-top: 350px;
 }
+
+#botao-entrada{
+    margin: auto;
+    padding: 100px;
+    font-weight: bolder;
+}
