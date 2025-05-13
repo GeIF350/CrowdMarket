@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <style>
+    
+        body {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .iphone-container {
+      width: 430px;
+      height: 932px;
+      background:white;
+      border: 16px solid #000;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+   
+    #topmenu{
+        display: flex;
+        justify-content: space-around;
+        position:absolute;
+        top: 0;       
+        left: 0;         
+        right: 0;       
+        bottom: 1;     
+        z-index: 1; 
+        background-color: #385F8F;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #user{
+      margin-left: 5px;
+    }
+
+    #carousel{
+        position:absolute;
+        margin-top: 75px;
+        top: 0;       
+        left: 0;         
+        right: 0;       
+        bottom: 1;     
+        z-index: 1; 
+    }
+    #postagem1{
+        margin: 7px;
+        border-radius: 10%;
+        background-color: #E7E8E8;
+        margin-top: 360px;
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+    }
+    #img1{
+      margin: 5px;
+    }
+    #userpost{
+      margin: 5px;
+      margin-top: 15px;
+      margin-right: 150px;
+    }
+    #desc{
+      margin-top: 20px;
+    }
+    #img2{
+        width: 200px;
+        height: 125px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+    }
+
+    #l1p1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+        margin: 0 auto;
+        
+    }
+    #l2p1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+    #l3p1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    #de{
+      margin: 0 auto;
+      text-align: center;
+      color: gray;
+      text-decoration: line-through
+    }
+    #para{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 110%;
+    }
+    #eco{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 120%;
+      color: green;
+    }
+    #postagem2{
+      margin: 7px;
+        border-radius: 10%;
+        background-color: #E7E8E8;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+    }
+    #im3{
+      margin: 5px;
+    }
+    #userpost2{
+      margin: 5px;
+      margin-top: 15px;
+      margin-right: 150px;
+    }
+    #desc2{
+      margin-top: 20px;
+    }
+    #img4{
+        width: 200px;
+        height: 125px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+    }
+
+    #l1p2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+        margin: 0 auto;
+        
+    }
+    #l2p2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+    #l3p2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    #de2{
+      margin: 0 auto;
+      text-align: center;
+      color: gray;
+      text-decoration: line-through
+    }
+    #para2{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 110%;
+    }
+    #eco2{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 120%;
+      color: green;
+    }
+    #downmenu{
+      display: flex;
+        justify-content: space-around;
+        position:absolute;
+        top: 1;       
+        left: 0;         
+        right: 0;       
+        bottom: 0;     
+        z-index: 0; 
+        background-color: #385F8F;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        opacity: 0.9;
+    }
+
+
+   
+    </style>
+</head>
+<body>
+    <div class="iphone-container">
+        <div class="container-fluid">
+          <div id="topmenu">
+            <img id="menu" src="/imgs/216424_menu_th_icon.png" alt="">
+            <input id="searchbarr" type="text" class="form-control" value="Busque no mercado">
+            <img id="user" src="/imgs/8324223_ui_essential_app_avatar_profile_icon.png" alt="">
+          </div>
+          <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imgs/prop1.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/prop2.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/prop3.png" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="postagem1">
+            <div id="l1p1">
+                <img id="img1" src="/imgs/black user.png" alt="">
+                <p id="userpost" > Luana M. publicou:</p>
+            </div>
+            <div id="l2p1">
+                <img id="img2"src="/imgs/post1.png">
+                <p id="desc">Refrigerante Lata - FRUK 350 ML - Sabor Limão, UNIDADE.</p>
+            </div>
+            <div id="l3p1">
+              <p id="de">De: R$5,98</p>
+              <p id="para">Para: R$ 3,98</p>
+              <p id="eco">Economia R$2,00!!!</p>
+          </div>
+          </div>
+          <div id="postagem2">
+              <div id="l1p2">
+                  <img id="img3" src="/imgs/black user.png" alt="">
+                  <p id="userpost2" >Sr. Beto publicou:</p>
+              </div>
+              <div id="l2p2">
+                  <img id="img4"src="/imgs/post2.png">
+                  <p id="desc">Toddynho - Sabor Tradicional CHOCOLATE, 200 ML, UNIDADE.</p>
+              </div>
+              <div id="l3p2">
+                <p id="de2">De: R$ 3,99</p>
+                <p id="para2">Para: R$ 1,49</p>
+                <p id="eco2">Economia R$1,50!!!</p>
+            </div>
+          </div>
+          <div id="downmenu">
+            <img id="home" src="/imgs/326656_home_icon.png">
+            <img id="catg" src="/imgs/8673699_ic_fluent_puzzle_cube_filled_icon.png">
+            <img id="photo" src="/imgs/8680164_camera_photography_icon.png">
+            <img id="fav" src="/imgs/211755_heart_icon.png">
+            <img id="mais" src="/imgs/6637731_horizontal_menu_point_icon.png">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
